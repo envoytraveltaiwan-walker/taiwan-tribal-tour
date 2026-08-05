@@ -71,6 +71,7 @@
             font-size: 18px;
         }
 
+        /* 亮點標題 */
         .section-title {
             font-size: 22px;
             color: #1b3b2b;
@@ -78,6 +79,7 @@
             padding-bottom: 8px;
             border-bottom: 2px solid #d4a359;
         }
+
         .card {
             background: #ffffff;
             border: 1px solid #e1e8e3;
@@ -97,6 +99,59 @@
         }
         .card li {
             margin-bottom: 10px;
+        }
+
+        /* 精品小團特色卡 */
+        .group-tag-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .group-tag {
+            background-color: #fdfbf7;
+            border: 1px solid #d4a359;
+            color: #8c6328;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            flex: 1 1 45%;
+            text-align: center;
+        }
+
+        /* QA 樣式 */
+        .qa-item {
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #e0e0e0;
+            padding-bottom: 15px;
+        }
+        .qa-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .qa-q {
+            font-weight: bold;
+            color: #1b3b2b;
+            font-size: 19px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .qa-q::before {
+            content: "Q";
+            background-color: #2e5a42;
+            color: #fff;
+            font-size: 14px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 8px;
+            margin-top: 3px;
+        }
+        .qa-a {
+            color: #444;
+            font-size: 18px;
+            padding-left: 28px;
         }
 
         .line-box {
@@ -171,10 +226,18 @@
     <!-- 內文區塊 -->
     <div class="content">
 
+        <!-- 精品小團特色標籤 -->
+        <div class="group-tag-box">
+            <div class="group-tag">✨ 精品小團品質</div>
+            <div class="group-tag">🙋‍♀️ 可單人報名</div>
+            <div class="group-tag">🚌 6 人即成團</div>
+            <div class="group-tag">🔒 每團上限 20 人</div>
+        </div>
+
         <!-- 情境引言 -->
         <div class="intro-box">
             <strong>您有多久，沒有靜下心來聽聽山與土地的故事了？</strong><br><br>
-            這不只是一趟旅行，而是一場深入島嶼靈魂的文化尋根。我們褪去走馬看花的觀光景點，帶您步入四個原住民族群的傳統領域，在古老儀式、巨木森林與部落歌聲中，找回最純粹的平靜。
+            這不只是一趟旅行，更是一場由<b>莉梅姐</b>帶領深入島嶼靈魂的文化尋根。我們褪去走馬看花的觀光景點，帶您步入四個原住民族群的傳統領域，在古老儀式、巨木森林與部落歌聲中，找回最純粹的平靜。
         </div>
 
         <!-- 核心原民體驗亮點 -->
@@ -183,7 +246,7 @@
         <div class="card">
             <div class="card-title">🌿 亮點一｜雙聖地尋幽 ‧ 在地原住民解說</div>
             <ul>
-                <li><strong>布農族鸞山森林博物館：</strong> 踏入無牆壁的天然博物館，探訪巨型「森林阿凡達」楠榕混生林，由族人帶領體會布農族對山林土地的敬畏與生態共生智慧。</li>
+                <li><strong>布農族鸞山森林博物館：</strong> 踏入無牆壁的天然博物館，探訪巨型「森林阿凡達」楠榕混生林，體會布農族對山林土地的敬畏與生態共生智慧。</li>
                 <li><strong>泰雅族棲蘭 130 線原始檜木林：</strong> 深入管制秘境，觀賞紅檜與黃檜參天巨木群，由在地原住民深度導覽，講述泰雅族的山林生存智慧與多樣性生態。</li>
             </ul>
         </div>
@@ -213,9 +276,30 @@
             </ul>
         </div>
 
+        <!-- QA 區塊 -->
+        <div class="section-title">❓ 常見問題 QA</div>
+        <div class="card">
+            <div class="qa-item">
+                <div class="qa-q">一個人可以報名參加嗎？</div>
+                <div class="qa-a">完全可以！我們非常歡迎單人報名。許多參加心靈行旅的團友也是獨自出發，在莉梅姐與部落朋友的熱情陪伴下，輕鬆融入大家。</div>
+            </div>
+            <div class="qa-item">
+                <div class="qa-q">成團人數與出團上限是多少？</div>
+                <div class="qa-a">本行程堅持高質感精品小團！<b>滿 6 人即可成團出發</b>，為維護導覽品質與部落體驗，<b>每團最多僅收 20 人</b>，名額有限。</div>
+            </div>
+            <div class="qa-item">
+                <div class="qa-q">這次行程是由莉梅姐親自帶領嗎？</div>
+                <div class="qa-a">是的！本行程特別邀請莉梅姐隨團陪伴與導覽解說，帶您用最深刻、最溫暖的視角走進部落與秘境山林。</div>
+            </div>
+            <div class="qa-item">
+                <div class="qa-q">行程中的行走強度會不會太高？老人家適合嗎？</div>
+                <div class="qa-a">行程以慢活體驗與深度解說為主，步道平緩好走，相當適合熟齡族群與喜愛大自然的朋友共同參與。</div>
+            </div>
+        </div>
+
         <!-- 中間提醒引導區 -->
         <div class="line-box">
-            <h3>📢 首發團限量籌備中！</h3>
+            <h3>📢 莉梅姐帶路首發團限量籌備中！</h3>
             <p style="font-size: 17px; color: #555; margin-bottom: 15px;">本行程本週五於夏季旅展首度曝光，加入 LINE 留言即享優先卡位權利！</p>
             <a href="https://lin.ee/Z3c7Qam" target="_blank" class="btn-line">
                 💬 點我加 LINE 留言卡位
@@ -224,11 +308,11 @@
 
     </div>
 
-    <!-- 頁尾（完整揭露旅行社名稱與交觀甲字號） -->
+    <!-- 頁尾 -->
     <div class="footer">
         <strong>安捷國際旅行社</strong><br>
         交觀甲5920號<br>
-        © 2026 版權所有 ‧ 本週五夏季旅展敬請期待
+        © 2026 版權所有 ‧ 夏季旅展敬請期待
     </div>
 </div>
 
