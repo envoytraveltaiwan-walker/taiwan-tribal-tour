@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跟著山海去呼吸：8日心靈行旅</title>
+    <style>
+        /* CSS Reset & 基礎設定 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+            background-color: #f4f6f3;
+            color: #2b332c;
+            line-height: 1.8;
+            font-size: 19px;
+            padding-bottom: 90px; /* 留出底部懸浮欄的空間，避免擋到內容 */
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        /* Header 視覺區 */
+        .header {
+            background: linear-gradient(135deg, #1b3b2b 0%, #2e5a42 100%);
+            color: #ffffff;
+            padding: 35px 20px 30px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #d4a359;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            font-size: 26px;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .header p {
+            font-size: 17px;
+            color: #e0ece4;
+            line-height: 1.5;
+        }
+
+        .content {
+            padding: 25px 20px;
+        }
+
+        .intro-box {
+            background-color: #eef4f0;
+            border-left: 5px solid #2e5a42;
+            padding: 18px 15px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: #1b3b2b;
+            margin: 25px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #d4a359;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #e1e8e3;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+        .card-title {
+            font-size: 20px;
+            color: #2e5a42;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card ul {
+            padding-left: 20px;
+        }
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        /* 網頁內引導加 LINE 區塊 */
+        .line-box {
+            background-color: #fdfbf7;
+            border: 2px solid #d4a359;
+            border-radius: 15px;
+            padding: 25px 20px;
+            margin-top: 35px;
+            text-align: center;
+        }
+        .line-box h3 {
+            font-size: 22px;
+            color: #1b3b2b;
+            margin-bottom: 10px;
+        }
+
+        /* 底部固定懸浮欄 (Sticky Bar) */
+        .fixed-bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid #e0e0e0;
+            padding: 12px 16px;
+            z-index: 999;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+        }
+        .bar-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .btn-line {
+            display: block;
+            width: 100%;
+            background-color: #06c755; /* LINE 官方綠色 */
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(6, 199, 85, 0.3);
+            transition: background-color 0.2s;
+        }
+        .btn-line:active {
+            background-color: #05b34c;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 15px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header 視覺頭部 -->
+    <div class="header">
+        <span class="badge">🌲 夏季旅展 ‧ 首發預熱</span>
+        <h1>跟著山海去呼吸<br>從排灣斜坡到泰雅秘境的 8 日心靈行旅</h1>
+        <p>縱貫排灣 ‧ 布農 ‧ 阿美 ‧ 泰雅四大族群<br>獨家解密鸞山阿凡達森林 & 棲蘭檜木巨木群</p>
+    </div>
+
+    <!-- 內文區塊 -->
+    <div class="content">
+
+        <!-- 情境引言 -->
+        <div class="intro-box">
+            <strong>您有多久，沒有靜下心來聽聽山與海的聲音了？</strong><br><br>
+            遠離城市的喧囂，我們帶您走一趟不一樣的東台灣。不用趕路、不塞行程，用 8 天的時間，深入四大族群土地，重新找回心靈的節奏。
+        </div>
+
+        <!-- 行程亮點 -->
+        <div class="section-title">✨ 行程四大亮點</div>
+
+        <div class="card">
+            <div class="card-title">🌿 亮點一｜雙秘境尋幽 ‧ 在地原住民解說</div>
+            <ul>
+                <li><strong>鸞山森林博物館：</strong> 探訪楠榕混生林帶與巨型「森林阿凡達」景觀，體驗布農族文化與生態共生智慧。</li>
+                <li><strong>棲蘭 130 線原始檜木林：</strong> 觀賞紅檜、黃檜參天巨木群，由在地原住民帶領深入解說泰雅人文與生態。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🏕️ 亮點二｜四大族群縱貫 ‧ 體驗生活美學</div>
+            <ul>
+                <li><strong>禮納里瑪家部落：</strong> 體驗生火過火儀式、四步舞、家屋圖騰解說，晚間共同處理在地食材與吉他彈唱。</li>
+                <li><strong>吳拉魯滋部落：</strong> 認識台灣阿拉比卡咖啡，體驗手烘咖啡 DIY。</li>
+                <li><strong>宜蘭樂水部落：</strong> 參與部落歡慶，體驗親手製作竹筒飯與烤鹹豬肉。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-title">♨️ 亮點三｜山海饗宴 ‧ 雙重溫泉住宿</div>
+            <ul>
+                <li><strong>在地特色料理：</strong> 萬巒名產豬腳、滿庭芳太監雞、紅瓦屋風味餐、泰雅部落風味餐與原生植物園自助藥用鍋。</li>
+                <li><strong>質感放鬆住宿：</strong> 入住鹿鳴溫泉酒店享用湯泉，並安排花蓮理想大地渡假村與羅東水岸森林會館。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🚆 亮點四｜輕鬆無憂移動 ‧ 高鐵專車接駁</div>
+            <ul>
+                <li>高雄專車出發，全程舒適接駁。</li>
+                <li>行程最後一日專車前往高鐵桃園站搭車返家，免去長途開車勞頓。</li>
+            </ul>
+        </div>
+
+        <!-- 中間提醒引導區 -->
+        <div class="line-box">
+            <h3>📢 首發團限量籌備中！</h3>
+            <p style="font-size: 17px; color: #555; margin-bottom: 15px;">本行程本週五於夏季旅展首度曝光，加入 LINE 留言即享優先卡位權利！</p>
+            <a href="https://lin.ee/Z3c7Qam" target="_blank" class="btn-line">
+                💬 點我加 LINE 留言卡位
+            </a>
+        </div>
+
+    </div>
+
+    <!-- 頁尾 -->
+    <div class="footer">
+        © 2026 旅行社 版權所有<br>
+        本週五夏季旅展 ‧ 敬請期待
+    </div>
+</div>
+
+<!-- 底部固定懸浮跳轉列 -->
+<div class="fixed-bottom-bar">
+    <div class="bar-container">
+        <a href="https://lin.ee/Z3c7Qam" target="_blank" class="btn-line">
+            💬 加 LINE 留言 "+1 想跟山海去呼吸" 領取 $500 優惠券
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
