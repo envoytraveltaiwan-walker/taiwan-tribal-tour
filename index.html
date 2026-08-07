@@ -14,7 +14,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
             background-color: #f4f6f3;
             color: #2b332c;
-            line-height: 1.8;
+            line-height: 1.7;
             font-size: 19px;
             padding-bottom: 90px;
             -webkit-text-size-adjust: 100%;
@@ -31,7 +31,7 @@
         .header {
             background: linear-gradient(135deg, #1b3b2b 0%, #2e5a42 100%);
             color: #ffffff;
-            padding: 35px 20px 30px;
+            padding: 30px 20px 25px;
             text-align: center;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
@@ -40,91 +40,90 @@
             display: inline-block;
             background-color: #d4a359;
             color: #ffffff;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             padding: 4px 14px;
             border-radius: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         .header h1 {
-            font-size: 26px;
-            line-height: 1.4;
-            margin-bottom: 12px;
+            font-size: 25px;
+            line-height: 1.35;
+            margin-bottom: 8px;
             font-weight: 700;
         }
         .header p {
-            font-size: 17px;
+            font-size: 16px;
             color: #e0ece4;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
         .content {
-            padding: 25px 20px;
-        }
-
-        .intro-box {
-            background-color: #eef4f0;
-            border-left: 5px solid #2e5a42;
-            padding: 18px 15px;
-            border-radius: 4px;
-            margin-bottom: 30px;
-            font-size: 18px;
-        }
-
-        /* 亮點標題 */
-        .section-title {
-            font-size: 22px;
-            color: #1b3b2b;
-            margin: 25px 0 15px 0;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #d4a359;
-        }
-
-        .card {
-            background: #ffffff;
-            border: 1px solid #e1e8e3;
-            border-radius: 12px;
             padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-        }
-        .card-title {
-            font-size: 20px;
-            color: #2e5a42;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .card ul {
-            padding-left: 20px;
-        }
-        .card li {
-            margin-bottom: 10px;
         }
 
-        /* 精品小團特色卡 */
+        /* 樂活標籤包 */
         .group-tag-box {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         .group-tag {
             background-color: #fdfbf7;
             border: 1px solid #d4a359;
             color: #8c6328;
-            padding: 8px 14px;
+            padding: 10px;
             border-radius: 8px;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: bold;
-            flex: 1 1 45%;
             text-align: center;
         }
 
-        /* QA 樣式 */
-        .qa-item {
+        .intro-box {
+            background-color: #eef4f0;
+            border-left: 5px solid #2e5a42;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+
+        .section-title {
+            font-size: 21px;
+            color: #1b3b2b;
+            margin: 20px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #d4a359;
+            font-weight: bold;
+        }
+
+        /* 亮點描述卡 */
+        .card {
+            background: #ffffff;
+            border: 1px solid #e1e8e3;
+            border-radius: 12px;
+            padding: 18px;
             margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+        .card-title {
+            font-size: 19px;
+            color: #2e5a42;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .card p {
+            font-size: 17px;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        /* QA 簡化 */
+        .qa-item {
+            margin-bottom: 12px;
             border-bottom: 1px dashed #e0e0e0;
-            padding-bottom: 15px;
+            padding-bottom: 12px;
         }
         .qa-item:last-child {
             border-bottom: none;
@@ -133,39 +132,21 @@
         .qa-q {
             font-weight: bold;
             color: #1b3b2b;
-            font-size: 19px;
-            margin-bottom: 5px;
-            display: flex;
-            align-items: flex-start;
-        }
-        .qa-q::before {
-            content: "Q";
-            background-color: #2e5a42;
-            color: #fff;
-            font-size: 14px;
-            padding: 2px 8px;
-            border-radius: 4px;
-            margin-right: 8px;
-            margin-top: 3px;
+            font-size: 18px;
+            margin-bottom: 4px;
         }
         .qa-a {
-            color: #444;
-            font-size: 18px;
-            padding-left: 28px;
+            color: #555;
+            font-size: 17px;
         }
 
         .line-box {
             background-color: #fdfbf7;
             border: 2px solid #d4a359;
             border-radius: 15px;
-            padding: 25px 20px;
-            margin-top: 35px;
+            padding: 20px;
+            margin-top: 25px;
             text-align: center;
-        }
-        .line-box h3 {
-            font-size: 22px;
-            color: #1b3b2b;
-            margin-bottom: 10px;
         }
 
         .fixed-bottom-bar {
@@ -196,113 +177,95 @@
             padding: 14px 10px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(6, 199, 85, 0.3);
-            transition: background-color 0.2s;
-        }
-        .btn-line:active {
-            background-color: #05b34c;
         }
 
         .footer {
             text-align: center;
-            padding: 25px 20px;
-            font-size: 15px;
-            color: #666;
-            margin-top: 20px;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+            margin-top: 15px;
             border-top: 1px solid #eee;
-            line-height: 1.6;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Header 視覺頭部 -->
+    <!-- Header -->
     <div class="header">
-        <span class="badge">🌲 夏季旅展 ‧ 深度原鄉首發預熱</span>
-        <h1>跟著山海去呼吸<br>從排灣斜坡到泰雅秘境的 8 日心靈行旅</h1>
-        <p>縱貫排灣 ‧ 布農 ‧ 阿美 ‧ 泰雅四大族群<br>解密鸞山阿凡達森林 & 棲蘭檜木巨木群</p>
+        <span class="badge">🌲 夏季旅展 ‧ 熟齡樂活首發</span>
+        <h1>跟著山海去呼吸<br>8 日東台灣原鄉心靈漫旅</h1>
+        <p>跨越四大原住民族群 ‧ 雙秘境生態沉浸</p>
     </div>
 
-    <!-- 內文區塊 -->
     <div class="content">
 
-        <!-- 精品小團特色標籤 -->
+        <!-- 樂活族在意的事標籤 -->
         <div class="group-tag-box">
-            <div class="group-tag">✨ 精品小團品質</div>
-            <div class="group-tag">🙋‍♀️ 可單人報名</div>
-            <div class="group-tag">🚌 6 人即成團</div>
-            <div class="group-tag">🔒 每團上限 20 人</div>
+            <div class="group-tag">✨ 莉梅姐隨團帶路</div>
+            <div class="group-tag">☕ 平日出發避人潮</div>
+            <div class="group-tag">🚌 6 人成團 / 上限 20 人</div>
+            <div class="group-tag">🙋‍♀️ 歡迎單人輕鬆報名</div>
         </div>
 
-        <!-- 情境引言 -->
+        <!-- 簡短引言 -->
         <div class="intro-box">
-            <strong>您有多久，沒有靜下心來聽聽山與土地的故事了？</strong><br><br>
-            這不只是一趟旅行，更是一場由<b>莉梅姐</b>帶領深入島嶼靈魂的文化尋根。我們褪去走馬看花的觀光景點，帶您步入四個原住民族群的傳統領域，在古老儀式、巨木森林與部落歌聲中，找回最純粹的平靜。
+            退下去忙碌，給自己 8 天假期。<br>
+            不用趕路、不提重物，跟著<b>莉梅姐</b>走進山海間，聽獵人歌唱、看千年巨木，找回生活的從容與平靜。
         </div>
 
-        <!-- 核心原民體驗亮點 -->
-        <div class="section-title">✨ 原鄉深度體驗四大亮點</div>
+        <!-- 描述式亮點（完全不洩漏地名） -->
+        <div class="section-title">✨ 為什麼樂活族都愛這趟旅行？</div>
 
         <div class="card">
-            <div class="card-title">🌿 亮點一｜雙聖地尋幽 ‧ 在地原住民解說</div>
-            <ul>
-                <li><strong>布農族鸞山森林博物館：</strong> 踏入無牆壁的天然博物館，探訪巨型「森林阿凡達」楠榕混生林，體會布農族對山林土地的敬畏與生態共生智慧。</li>
-                <li><strong>泰雅族棲蘭 130 線原始檜木林：</strong> 深入管制秘境，觀賞紅檜與黃檜參天巨木群，由在地原住民深度導覽，講述泰雅族的山林生存智慧與多樣性生態。</li>
-            </ul>
+            <div class="card-title">🌿 雙秘境漫步 ‧ 原民耆老導覽</div>
+            <p>• 走進沒有牆壁的阿凡達原生森林，感受巨木群包圍的純淨負離子。</p>
+            <p>• 踏入管制區千年古樹聖地，聽在地原住民講述大自然的生存智慧。</p>
         </div>
 
         <div class="card">
-            <div class="card-title">🏕️ 亮點二｜四大族群縱貫 ‧ 部落文化體驗</div>
-            <ul>
-                <li><strong>排灣 / 魯凱族（禮納里瑪家部落）：</strong> 參與傳統部落生火與過火迎賓儀式、學習四步舞、聆聽家屋圖騰解說與原民工藝 DIY，晚間圍坐品嚐在地食材，沉浸於吉他彈唱的部落溫情。</li>
-                <li><strong>排灣族（吳拉魯滋部落）：</strong> 走訪台灣阿拉比卡咖啡產地，聆聽部落重建故事並體驗手烘咖啡 DIY。</li>
-                <li><strong>泰雅族（宜蘭樂水部落）：</strong> 體驗親手製作傳統竹筒飯、烤鹹豬肉，與族人同歡部落歌舞，感受泰雅族的熱情與歡慶文化。</li>
-            </ul>
+            <div class="card-title">🏕️ 跨越四大族群 ‧ 部落生活美學</div>
+            <p>• 參與古老過火迎賓儀式、手烘高山阿拉比卡咖啡、體驗傳統竹筒飯。</p>
+            <p>• 晚間圍坐篝火旁，品嚐部落在地食材，伴隨吉他彈唱共度溫馨夜晚。</p>
         </div>
 
         <div class="card">
-            <div class="card-title">🍽️ 亮點三｜部落風味饗宴 ‧ 土地的美味饋贈</div>
-            <ul>
-                <li><strong>原鄉特色料理：</strong> 品嚐原汁原味的部落風味餐、泰雅部落風味料理、阿美族傳統野菜美食，以及原生植物園嚴選的藥用野菜自助鍋。</li>
-                <li><strong>質感沉浸住宿：</strong> 安排禮納里與樂水部落接待家庭，深刻體驗部落熱情；並搭配鹿鳴溫泉酒店、理想大地渡假村與水岸森林會館，給您溫馨與品質兼具的住宿體驗。</li>
-            </ul>
+            <div class="card-title">♨️ 山海野食饗宴 ‧ 質感溫泉慢活</div>
+            <p>• 嚴選原鄉野菜火鍋與在地風味料理，享受土地最純粹的美味。</p>
+            <p>• 入住優質湯泉渡假村與部落溫馨接待家庭，兼顧深度體驗與舒適睡眠。</p>
         </div>
 
         <div class="card">
-            <div class="card-title">🚆 亮點四｜輕鬆無憂移動 ‧ 全程專車與高鐵</div>
-            <ul>
-                <li>高雄專車出發，全程舒適專車接送部落與秘境。</li>
-                <li>行程最後一日專車前往高鐵桃園站搭車返家，免去長途開車勞頓，將全身心留給山林與心靈。</li>
-            </ul>
+            <div class="card-title">🚆 無憂移動 ‧ 專車搭配高鐵回程</div>
+            <p>• 全程專車接送秘境與部落，不需為交通勞頓，輕鬆隨行。</p>
+            <p>• 回程專車直達高鐵桃園站，輕鬆優雅搭車返家。</p>
         </div>
 
-        <!-- QA 區塊 -->
-        <div class="section-title">❓ 常見問題 QA</div>
+        <!-- 樂活族 QA -->
+        <div class="section-title">❓ 熟齡朋友最常問</div>
         <div class="card">
             <div class="qa-item">
-                <div class="qa-q">一個人可以報名參加嗎？</div>
-                <div class="qa-a">完全可以！我們非常歡迎單人報名。許多參加心靈行旅的團友也是獨自出發，在莉梅姐與部落朋友的熱情陪伴下，輕鬆融入大家。</div>
+                <div class="qa-q">Q：一個人報名會不會很奇怪？</div>
+                <div class="qa-a">答：完全不會！許多團友也是獨自出發，在莉梅姐與部落熱情陪伴下，很快就結交溫暖的好朋友。</div>
             </div>
             <div class="qa-item">
-                <div class="qa-q">成團人數與出團上限是多少？</div>
-                <div class="qa-a">本行程堅持高質感精品小團！<b>滿 6 人即可成團出發</b>，為維護導覽品質與部落體驗，<b>每團最多僅收 20 人</b>，名額有限。</div>
+                <div class="qa-q">Q：會不會需要走很多山路或爬山？</div>
+                <div class="qa-a">答：不會！行程專為樂活步調設計，步道平緩好走、行程放慢，適合輕鬆漫步。</div>
             </div>
             <div class="qa-item">
-                <div class="qa-q">這次行程是由莉梅姐親自帶領嗎？</div>
-                <div class="qa-a">是的！本行程特別邀請莉梅姐隨團陪伴與導覽解說，帶您用最深刻、最溫暖的視角走進部落與秘境山林。</div>
-            </div>
-            <div class="qa-item">
-                <div class="qa-q">行程中的行走強度會不會太高？老人家適合嗎？</div>
-                <div class="qa-a">行程以慢活體驗與深度解說為主，步道平緩好走，相當適合熟齡族群與喜愛大自然的朋友共同參與。</div>
+                <div class="qa-q">Q：什麼時候出發？</div>
+                <div class="qa-a">答：主打<b>平日出發</b>，避開假日人潮與塞車！每團精緻控管最多 20 人，保障最佳旅遊品質。</div>
             </div>
         </div>
 
-        <!-- 中間提醒引導區 -->
+        <!-- LINE 區塊 -->
         <div class="line-box">
-            <h3>📢 莉梅姐帶路首發團限量籌備中！</h3>
-            <p style="font-size: 17px; color: #555; margin-bottom: 15px;">本行程本週五於夏季旅展首度曝光，加入 LINE 留言即享優先卡位權利！</p>
+            <h3 style="font-size: 20px; color: #1b3b2b; margin-bottom: 8px;">📢 莉梅姐帶路 ‧ 首發團開團預告</h3>
+            <p style="font-size: 16px; color: #666; margin-bottom: 12px;">本週五旅展首度曝光，加 LINE 留言預先卡位名額！</p>
             <a href="https://lin.ee/Z3c7Qam" target="_blank" class="btn-line">
-                💬 點我加 LINE 留言卡位
+                💬 點我加 LINE 優先卡位
             </a>
         </div>
 
@@ -312,11 +275,11 @@
     <div class="footer">
         <strong>安捷國際旅行社</strong><br>
         交觀甲5920號<br>
-        © 2026 版權所有 ‧ 夏季旅展敬請期待
+        © 2026 版權所有 ‧ 敬請期待
     </div>
 </div>
 
-<!-- 底部固定懸浮跳轉列 -->
+<!-- 懸浮跳轉列 -->
 <div class="fixed-bottom-bar">
     <div class="bar-container">
         <a href="https://lin.ee/Z3c7Qam" target="_blank" class="btn-line">
